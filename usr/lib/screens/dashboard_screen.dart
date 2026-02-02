@@ -104,6 +104,19 @@ class _DashboardScreenState extends State<DashboardScreen> {
               },
             ),
           ),
+
+          // Layer 3: Close/Settings Button
+          Positioned(
+            top: 24,
+            right: 24,
+            child: IconButton(
+              icon: const Icon(Icons.close, color: Colors.white54),
+              onPressed: () {
+                Navigator.of(context).pushReplacementNamed('/');
+              },
+              tooltip: "Disconnect & Exit",
+            ),
+          ),
         ],
       ),
     );

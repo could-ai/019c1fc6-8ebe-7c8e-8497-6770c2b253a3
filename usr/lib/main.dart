@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:couldai_user_app/screens/dashboard_screen.dart';
+import 'package:couldai_user_app/screens/connection_screen.dart';
 
 void main() {
   runApp(const RaceOverlayApp());
@@ -22,7 +23,8 @@ class RaceOverlayApp extends StatelessWidget {
       ),
       initialRoute: '/',
       routes: {
-        '/': (context) => const DashboardScreen(),
+        '/': (context) => const ConnectionScreen(),
+        '/dashboard': (context) => const DashboardScreen(),
       },
     );
   }
